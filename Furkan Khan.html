@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Khan - Cloud & Web Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- EDIT NAME HERE -->
+                <div class="text-xl font-bold text-slate-900">Furkan Khan</div>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+                    Inquire Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">Freelance Solutions Architect</span>
+            <h1 class="mt-4 text-5xl sm:text-6xl font-extrabold text-slate-900 tracking-tight">
+                Scalable <span class="gradient-text">Cloud</span> & <br>
+                Robust <span class="gradient-text">Database</span> Solutions.
+            </h1>
+            <p class="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
+                <!-- EDIT HERO DESCRIPTION HERE -->
+                I build high-performance web applications powered by Azure Cloud infrastructure and optimized database management.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#services" class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center gap-2">
+                    View Services <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Background Decoration -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full z-0 opacity-30 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">What I Offer</h2>
+                <p class="mt-4 text-slate-600">End-to-end development tailored to your business needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Service 1: Azure + Web -->
+                <div class="glass-card p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition duration-300">
+                        <i class="fas fa-cloud text-2xl text-blue-600 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Azure Cloud & Web Dev</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Full-stack web development integrated with Microsoft Azure. I ensure your applications are secure, scalable, and globally available.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Custom Web Applications</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Azure App Service Hosting</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Serverless Functions</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: Database Services -->
+                <div class="glass-card p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-600 transition duration-300">
+                        <i class="fas fa-database text-2xl text-cyan-600 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Database Services</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Expert database design, optimization, and management. Whether SQL or NoSQL, I ensure your data is organized and fast.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li><i class="fas fa-check text-cyan-500 mr-2"></i>Schema Design & Architecture</li>
+                        <li><i class="fas fa-check text-cyan-500 mr-2"></i>SQL / Azure SQL Database</li>
+                        <li><i class="fas fa-check text-cyan-500 mr-2"></i>Performance Tuning & Migration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready to Start Your Project?</h2>
+            <p class="text-slate-300 mb-10 text-lg">
+                Contact me today for a free consultation regarding your Cloud or Database needs.
+            </p>
+
+            <div class="bg-slate-800 rounded-2xl p-8 md:p-12 border border-slate-700 shadow-2xl">
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Phone -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4 class="text-slate-400 text-sm uppercase tracking-wide mb-1">Call / WhatsApp</h4>
+                        <!-- EDIT PHONE HERE -->
+                        <a href="tel:8928985033" class="text-lg font-semibold hover:text-blue-400 transition">
+                            +91 8928985033
+                        </a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="text-slate-400 text-sm uppercase tracking-wide mb-1">Email</h4>
+                        <!-- EDIT EMAIL HERE -->
+                        <a href="mailto:khanfurkan1508@gmail.com" class="text-lg font-semibold hover:text-blue-400 transition break-all">
+                            khanfurkan1508@gmail.com
+                        </a>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="text-slate-400 text-sm uppercase tracking-wide mb-1">Status</h4>
+                        <span class="text-lg font-semibold text-green-400">
+                            Available for Hire
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-slate-500 text-sm">
+                &copy; <span id="year"></span> Furkan Khan. All Rights Reserved.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
